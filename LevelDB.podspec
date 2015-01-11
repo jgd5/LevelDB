@@ -1,13 +1,11 @@
 Pod::Spec.new do |s|
-  s.name = 'LevelDB'
-  s.version = '0.2'
-  s.license = 'MIT'
-  s.summary = 'An Objective-C/Swift bindings for LevelDB.'
-  s.homepage = 'https://github.com/jgd5/LevelDB'
-  s.source = { :git => 'https://github.com/jgd5/LevelDB.git' }
-
-  s.ios.deployment_target = '8.0'
-  s.osx.deployment_target = '10.9'
-
-  s.source_files = 'LevelDB/*'
+  s.name         = "LevelDB"
+  s.version      = "0.0.1"
+  s.summary      = "An Objective-C/Swift bindings for LevelDB."
+  s.homepage     = "https://github.com/jgd5/LevelDB"
+  s.license      = "MIT"
+  s.author       = "jgd5"
+  s.source       = { :git => "https://github.com/jgd5/LevelDB.git", :commit => "982f03bce96cc8417ddac82d5408f05250d376eb" }
+  s.source_files  = "LevelDB/", "include/"
+  s.preserve_paths = "Library/libleveldb.a"
 end
