@@ -8,5 +8,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/jgd5/LevelDB.git", :commit => "982f03bce96cc8417ddac82d5408f05250d376eb" }
   s.source_files  = "LevelDB", "include/leveldb"
   s.resource = "Library/libleveldb.a"
-  s.preserve_paths = "Library/"
+  s.library = 'c++'
+  s.xcconfig = { 'CLANG_CXX_LIBRARY' => 'libc++' }
 end
