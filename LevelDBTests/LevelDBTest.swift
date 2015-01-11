@@ -3,7 +3,7 @@ import LevelDB
 
 class LevelDBTest: XCTestCase {
     var subject: LevelDB!
-    let dbURL = NSURL.URLWithString("/tmp/testDB")
+    let dbURL = NSURL(fileURLWithPath: "/tmp/testDB")
 
     override func setUp() {
         subject = LevelDB(DBURL: dbURL)

@@ -68,6 +68,19 @@
 		F8A4B93819726DC400066D06 /* WriteBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteBatch.h; sourceTree = "<group>"; };
 		F8A4B93919726DC400066D06 /* WriteBatch.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WriteBatch.mm; sourceTree = "<group>"; };
 		F8BB2735197273D0009B23EA /* LevelDBTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelDBTest.swift; sourceTree = "<group>"; };
+		FC85B1BE1A6330DE00EC7127 /* c.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = c.h; sourceTree = "<group>"; };
+		FC85B1BF1A6330DE00EC7127 /* cache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cache.h; sourceTree = "<group>"; };
+		FC85B1C01A6330DE00EC7127 /* comparator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = comparator.h; sourceTree = "<group>"; };
+		FC85B1C11A6330DE00EC7127 /* db.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = db.h; sourceTree = "<group>"; };
+		FC85B1C21A6330DE00EC7127 /* env.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = env.h; sourceTree = "<group>"; };
+		FC85B1C31A6330DE00EC7127 /* filter_policy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = filter_policy.h; sourceTree = "<group>"; };
+		FC85B1C41A6330DE00EC7127 /* iterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iterator.h; sourceTree = "<group>"; };
+		FC85B1C51A6330DE00EC7127 /* options.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = "<group>"; };
+		FC85B1C61A6330DE00EC7127 /* slice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = slice.h; sourceTree = "<group>"; };
+		FC85B1C71A6330DE00EC7127 /* status.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = status.h; sourceTree = "<group>"; };
+		FC85B1C81A6330DE00EC7127 /* table.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = table.h; sourceTree = "<group>"; };
+		FC85B1C91A6330DE00EC7127 /* table_builder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = table_builder.h; sourceTree = "<group>"; };
+		FC85B1CA1A6330DE00EC7127 /* write_batch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = write_batch.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +120,7 @@
 		F8A4B90A19726D9600066D06 = {
 			isa = PBXGroup;
 			children = (
+				FC85B1BC1A6330DE00EC7127 /* include */,
 				F8A4B91619726D9600066D06 /* LevelDB */,
 				F8A4B92319726D9600066D06 /* LevelDBTests */,
 				F8A4B91519726D9600066D06 /* Products */,
@@ -165,6 +179,34 @@
 				F8A4B92519726D9600066D06 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC85B1BC1A6330DE00EC7127 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				FC85B1BD1A6330DE00EC7127 /* leveldb */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		FC85B1BD1A6330DE00EC7127 /* leveldb */ = {
+			isa = PBXGroup;
+			children = (
+				FC85B1BE1A6330DE00EC7127 /* c.h */,
+				FC85B1BF1A6330DE00EC7127 /* cache.h */,
+				FC85B1C01A6330DE00EC7127 /* comparator.h */,
+				FC85B1C11A6330DE00EC7127 /* db.h */,
+				FC85B1C21A6330DE00EC7127 /* env.h */,
+				FC85B1C31A6330DE00EC7127 /* filter_policy.h */,
+				FC85B1C41A6330DE00EC7127 /* iterator.h */,
+				FC85B1C51A6330DE00EC7127 /* options.h */,
+				FC85B1C61A6330DE00EC7127 /* slice.h */,
+				FC85B1C71A6330DE00EC7127 /* status.h */,
+				FC85B1C81A6330DE00EC7127 /* table.h */,
+				FC85B1C91A6330DE00EC7127 /* table_builder.h */,
+				FC85B1CA1A6330DE00EC7127 /* write_batch.h */,
+			);
+			path = leveldb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +329,7 @@
 					};
 					F8A4B91319726D9600066D06 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 5HV38P72GC;
 					};
 					F8A4B91E19726D9600066D06 = {
 						CreatedOnToolsVersion = 6.0;
@@ -587,6 +630,7 @@
 				);
 				INFOPLIST_FILE = LevelDB/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -594,7 +638,9 @@
 				);
 				OTHER_LDFLAGS = "-lleveldb";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos8.2;
 				SKIP_INSTALL = YES;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = include;
 			};
 			name = Debug;
 		};
@@ -612,6 +658,7 @@
 				);
 				INFOPLIST_FILE = LevelDB/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -619,7 +666,9 @@
 				);
 				OTHER_LDFLAGS = "-lleveldb";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos8.2;
 				SKIP_INSTALL = YES;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = include;
 			};
 			name = Release;
 		};
