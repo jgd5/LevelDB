@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = "jgd5"
   s.source       = { :git => "https://github.com/jgd5/LevelDB.git", :commit => "982f03bce96cc8417ddac82d5408f05250d376eb" }
-  s.source_files  = "LevelDB/", "include/"
-  s.preserve_paths = "Library/libleveldb.a"
+  s.source_files  = "LevelDB", "include/leveldb"
+  s.resource = "Library/libleveldb.a"
+  s.preserve_paths = "Library/"
 end
