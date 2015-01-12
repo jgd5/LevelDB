@@ -14,7 +14,7 @@
 NSError* errorFromStatus(leveldb::Status status);
 
 leveldb::Slice sliceFromString(NSString *string);
-NSString* stringFromSlice(leveldb::Slice slice);
+NSString* stringFromSlice(leveldb::Slices slice);
 
 leveldb::ReadOptions adaptReadOptions(ReadOptions readOptions);
 leveldb::WriteOptions adaptWriteOptions(WriteOptions writeOptions);

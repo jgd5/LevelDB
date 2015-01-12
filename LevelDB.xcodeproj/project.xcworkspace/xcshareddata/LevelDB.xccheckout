@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D4143826-5DAC-4067-9A06-5C81E3CEA354</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LevelDB</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>616D07CC3E5930056D128B88929C2E49ECEB40EF</key>
+		<string>https://github.com/jgd5/LevelDB.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LevelDB.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>616D07CC3E5930056D128B88929C2E49ECEB40EF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jgd5/LevelDB.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>616D07CC3E5930056D128B88929C2E49ECEB40EF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>616D07CC3E5930056D128B88929C2E49ECEB40EF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LevelDB</string>
+		</dict>
+	</array>
+</dict>
+</plist>
